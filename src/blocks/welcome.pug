@@ -28,14 +28,15 @@ section.double-bg
         h3.my-name-title Вадим 
           span Робинов
       .clear
-      .scroll-block Скролл
-        .img-scroll-block
-          +icon('scroll', 'scroll-img')
+      a(href='')
+       .scroll-block Скролл
+         .img-scroll-block
+           +icon('scroll', 'scroll-img')
   .container
       .about
           .about-photo
             .my-photo
-              img(src='../images/content/my_photo.png', alt='my_photo')                 
+              img(src=require('./images/content/my_photo.png'), alt="my photo")
             .about-photo-text Проживаю:
               span.margin-one Коломна                
             .about-photo-text Возраст:
