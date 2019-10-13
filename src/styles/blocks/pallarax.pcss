@@ -53,20 +53,56 @@ a{
 .header-menu a{
      color: rgb(255, 255, 255);
 }
-.social-icons{
-    width: 167px;
-    height: 30px;
-        margin-top: 71px;
+.header-menu a:hover{
+     color:$links-active;
+     border-bottom-color:$links-active;
+     }
+
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-top:69px;
     float: left;
-}
-.header-icon{
-    float: left;
+  }
+
+  &__item {
     margin-right: 40px;
-    opacity: .5;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover {
+      .socials__icon {
+        fill: $links-active;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    fill: #414b63;
+    height: 25px;
+
+    &--insta {
+      width: 25px;
+    }
+
+    &--vk {
+      width: 31px;
+    }
+
+    &--github {
+      width: 27px;
+    }
+  }
 }
-.header-icon:last-child{
-    margin-right: 0px;
-}
+
 .my-name-block{
     width: 652px;
     height: 127px;
@@ -103,7 +139,7 @@ a{
   line-height: 1.667;
     margin: auto;
 }
-.img-scroll{
+.img-scroll-block{
     margin-left: 15px;
 }
 

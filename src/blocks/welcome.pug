@@ -16,29 +16,26 @@ section.double-bg
           a(href='') Отзывы
         li
           a(href='') Связаться
-      .social-icons
-        .header-icon
-          a(href='#')
-            img(src='../images/icons/insta.svg', alt='icon-insta')
-        .header-icon
-          a(href='#')
-            img(src='../images/icons/vk.svg', alt='icon-vk')
-        .header-icon
-          a(href='#')
-            img(src='../images/icons/github.svg', alt='icon-github')
+      - var socials = ['insta', 'vk', 'github']      
+      .socials
+        ul.socials__list
+          each social in socials
+            li.socials__item
+              a(href='').socials__link
+               +icon(social, `socials__icon socials__icon--${social}`)
       .my-name-block
         .my-name-text Личный сайт веб разработчика 
         h3.my-name-title Вадим 
           span Робинов
       .clear
       .scroll-block Скролл
-        .img-scroll
-          img(src='../images/icons/scroll.svg', alt='scroll')
+        .img-scroll-block
+          +icon('scroll', 'scroll-img')
   .container
       .about
           .about-photo
             .my-photo
-              img(src='images/content/my_photo.png', alt='my_photo')                 
+              img(src='../images/content/my_photo.png', alt='my_photo')                 
             .about-photo-text Проживаю:
               span.margin-one Коломна                
             .about-photo-text Возраст:
@@ -49,4 +46,4 @@ section.double-bg
             span.hello Привет, меня зовут                 
             h3.about-name Вадим Робинов                
             p.about-text-one Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и соврменные проекты.
-            p.about-text-two Этот сайт я сделал в рамках обучения в Школе Онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!          
+            p.about-text-two Этот сайт я сделал в рамках обучения в Школе Онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
