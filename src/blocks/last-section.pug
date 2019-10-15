@@ -3,37 +3,35 @@ section.last-section-bg
     .reviews
       h3.reviews__title Что обо мне говорят
       .reviews__arrows-block
-        a(href="")
-          .reviews__arrow.arrow-prev
-        a(href="")
-          .reviews__arrow.arrow-next
-      .reviews__quote-one
-        .author-one
-          .text-author.ta-one Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .img-author-block.ia-one
-            +image("content/author01.png", "author-one")
+        button.reviews__arrow.arrow-prev
+        button.reviews__arrow.arrow-next
+      .reviews__quote-left
+        .author-left
+          .text-author Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          .img-author-block
+            +image("content/author01.png", "author-left")
             h4.author-title Ковальчук Дмитрий
             .author-position Основатель Loftschool
-      .reviews__quote-two
-        .author-two
-          .text-author.ta-two Этот код выдержит любые испытания. Только пожалуйста не загружайте сайт на слишком старых браузерах
-          .img-author-block.ia-two
-            +image("content/author02.png", "author-two")
+      .reviews__quote-right
+        .author-right
+          .text-author Этот код выдержит любые испытания. Только пожалуйста не загружайте сайт на слишком старых браузерах
+          .img-author-block
+            +image("content/author02.png", "author-right")
             h4.author-title Владимир Сабанцев
             .author-position Преподователь
     .form-section
       h3.title-form Связаться со мной 
       form.form
         .input-block-name
-          .block-name.block-style Введите Ваше имя
-          input(type='text').input-name
+          label(for='name').block-name.block-style Введите Ваше имя
+          input(type='text' id='name').input-name
         .input-block-email  
-          .block-email.block-style Введите ваш email
-          input(type='text').input-email
+          label(for='email').block-email.block-style Введите ваш email
+          input(type='text' id='email').input-email
         .textarea-wrap
-          .block-help.block-style Сообщение к письму
-          textarea
-        a.btn-form Отправить
+          label(for='help').block-help.block-style Сообщение к письму
+          textarea(id='help')
+        button(type='submit').btn-form Отправить
 
 
           
