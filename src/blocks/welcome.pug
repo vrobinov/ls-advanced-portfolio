@@ -1,4 +1,16 @@
 section.parallax
+  .parallax__layer(data-speed='0.1')
+    img(src=require("./images/parallax/parallax_items06.png")).parallax__image
+  .parallax__layer(data-speed='0.27')
+    img(src=require("./images/parallax/parallax_items05.png")).parallax__image
+  .parallax__layer(data-speed='0.38')
+    img(src=require("./images/parallax/parallax_items04.png")).parallax__image
+  .parallax__layer(data-speed='0.43')
+    img(src=require("./images/parallax/parallax_items03.png")).parallax__image
+  .parallax__layer(data-speed='0.42')
+    img(src=require("./images/parallax/parallax_items02.png")).parallax__image
+  .parallax__layer(data-speed='0.44')
+    img(src=require("./images/parallax/parallax_items01.png")).parallax__image
   header
     .container
       .logo
@@ -23,28 +35,29 @@ section.parallax
             li.socials__item
               a(href='').socials__link
                +icon(social, `socials__icon socials__icon--${social}`)
-  .my-name-block
-    .my-name-text Личный сайт веб разработчика 
-    h3.my-name-title Вадим 
-      span Робинов
-  .clear
-  a(href='')
-    .scroll-block Скролл
-      .img-scroll-block
-        +icon('scroll', 'scroll-img')
-  .container
-      .about
-          .about-photo
-            .my-photo
-              img(src=require('./images/content/my_photo.png'), alt="my photo")
+    .my-name-block
+      .my-name-text Личный сайт веб разработчика 
+      h3.my-name-title Вадим 
+        span Робинов
+    .clear
+    a(href='')
+      .scroll-block Скролл
+        .img-scroll-block
+          +icon('scroll', 'scroll-img')
+.about
+    .container
+      .about-wrap
+        .about-photo
+          .my-photo
+            img(src=require('./images/content/my_photo.png'), alt="my photo")
             .about-photo-text Проживаю:
               span.margin-one Коломна                
             .about-photo-text Возраст:
               span.margin-two 28 лет               
             .about-photo-text Родился:
               span.margin-three 5 марта 1991           
-          .about-article
+        .about-article
             span.hello Привет, меня зовут                 
             h3.about-name Вадим Робинов                
-            p.about-text-one Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и соврменные проекты.
-            p.about-text-two Этот сайт я сделал в рамках обучения в Школе Онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+            p.about-text-one Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делатинтересные и соврменные проекты.
+            p.about-text-two Этот сайт я сделал в рамках обучения в Школе Онлайн образованиLoftSchool.Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно красиво!
