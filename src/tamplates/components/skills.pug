@@ -1,5 +1,5 @@
 script(type="text/x-tamplate")#skills-list
-    ul.user-skills
+    ul.skills
         li.skills-row__item(v-for="skill in skills" :key="skill.skillsGroup")
             skills-row(
                 :skill="skill"
@@ -9,16 +9,18 @@ script(type="text/x-tamplate")#skills-row
     .skills-row
         h3.skills-row__title {{skill.skillsGroup}}
         ul.skills-row__list
-            li.skills-row__item(v-for="(skillPercent, SkillName) in skill.skills")
+            li.skills-row__item(v-for="(skillPercent, skillName) in skill.skills")
                 skill(
-                    :skill-name="SkillName"
+                    :skill-name="skillName"
                     :skill-percent="skillPercent"
                 )
                 
 script(type="text/x-tamplate")#skill             
     .skill
-        svg(viewBox="0 0 200 200" preserveAspectRatio="none").skill__shape
-            circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--under
-            circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--above
-            linear-gradient()
-        .skill__title {{SkillName}}
+        svg(viewBox="0 0 100 100" preserveAspectRatio="none").skill__shape
+            circle(r="40" cx="50" cy="50").skill__circle.skill__circle--position--under
+            circle(r="40" cx="50" cy="50" ref="color-circle" stroke="url(#gradient)" transform='rotate(180 50 50)').skill__circle.skill__circle--position--above
+            linear-gradient(id="gradient" x1="0%" y1="0%" x2="100%" y2="0")
+                stop(offset="0%" stop-color="#5500f2")
+                stop(offset="100%" stop-color="#8f00ef")
+        .skill__title {{skillName}}

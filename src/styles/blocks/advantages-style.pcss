@@ -31,7 +31,7 @@ padding-top: 125px;
   line-height: 1.875;
   text-align: left;
 }
-.user-skills{
+.skills{
     width: 758px;
     height: 476px;
     margin-left: 129px;
@@ -45,22 +45,26 @@ display:flex;
 width: 210px;
 height: 210px;
 position:relative;
+margin-bottom: 40px;
 }
 
-
-
+.skill__circle{
+  fill: transparent;
+}
+.skill__circle--position--under{
+  stroke-width: 3px;
+}
 .skill__shape {
   width: 200px;
   height: 200px;
   fill: transparent;
   stroke: #424244;
-  stroke-width: 3px;
-  transform: rotate(100deg);
 }
 .skill__circle--position--above{
-stroke: #d47f1e;
-  stroke-width: 15px;
+   stroke: #d47f1e;
+  stroke-width: 10px;
   stroke-dasharray: 251;
+  stroke-dashoffset: 100;
   
 }
 
@@ -74,15 +78,23 @@ stroke: #d47f1e;
 }
 
 .skill__title{
-  font-size: 18px;
+  /*font-size: 18px;
   font-family: "Open Sans";
-  color: rgba(255, 255, 255, 0.502);
+  
   font-weight: bold;
   line-height: 2.667;
   text-align: left;
   position: absolute;
   top: 75px;
-  left: 70px;
+  left: 70px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.502);
+  padding: 14px;
 }
 .hands-left{
     position: absolute;
