@@ -1,37 +1,4 @@
 .works
   .container
     h2.section-title Мои работы
-    .works__left
-      .slider
-        +image("content/img-preview.png", "slider__fillpic")
-        .slider__preview
-          ul.previews
-            li.previews__item
-              +image("content/preview_item01.png", "previews__pic")
-            li.previews__item
-              +image("content/preview_item02.png", "previews__pic")
-            li.previews__item
-              +image("content/preview_item03.png", "previews__pic")
-            li.previews__item
-              +image("content/preview_item04.png", "previews__pic")
-        .slider__buttons
-          .slider-button
-            button.slider-buttons__item.slider-buttons__item--slide--prev
-              +image("content/arrow-next.png", "arrow")  
-            button.slider-buttons__item.slider-buttons__item--slide--next
-              +image("content/arrow-prev.png", "arrow") 
-    .works__right
-      .works__tags
-        - var tags = ['HTML', 'CSS', 'javascript']
-          ul.tags
-          each tag in tags
-            li.tags__item #{tag}
-      .works__text
-        h3.works__title Сайт школы образования
-        .works__desc-text
-          p Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-        a.iconed-link
-          +icon('link', 'iconed-link__icon')
-          .iconed-link__text Посмотреть сайт
-        .position_slide
-          span.number 2   
+    #slider-component
