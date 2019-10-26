@@ -1,4 +1,4 @@
-section.parallax
+section(id='#home').parallax
   .parallax__layer(data-speed='0.1')
     img(src=require("./images/parallax/parallax_items06.png")).parallax__image
   .parallax__layer(data-speed='0.27')
@@ -15,19 +15,8 @@ section.parallax
     .container
       .logo
         a.link-logo(href='') ВР
-      ul.header-menu
-        li
-          a(href='') Главная
-        li
-          a(href='') Обо мне
-        li
-          a(href='') Навыки
-        li
-          a(href='') Работы
-        li
-          a(href='') Отзывы
-        li
-          a(href='') Связаться
+      .menu-wrap
+        vc-menu
       - var socials = ['insta', 'vk', 'github']      
       .socials
         ul.socials__list
@@ -44,7 +33,7 @@ section.parallax
       .scroll-block Скролл
         .img-scroll-block
           +icon('scroll', 'scroll-img')
-.about
+.about(id='#about')
     .container
       .about-wrap
         .about-photo
