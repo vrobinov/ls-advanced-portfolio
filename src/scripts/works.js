@@ -1,7 +1,8 @@
 import Vue from "vue";
 
 const thumbs = {
-    template: "#slider-thumbs"
+    template: "#slider-thumbs",
+    props: ["works"]
 }
 
 const btns = {
@@ -10,7 +11,8 @@ const btns = {
 
 const display = {
     template: "#slider-display",
-    components: { thumbs, btns } 
+    components: { thumbs, btns },
+    props: ["works"] 
 }
 
 const tags = {
@@ -26,5 +28,21 @@ const info = {
 new Vue({
     el: "#slider-component",
     template: "#slider-container",
-    components: { display, info }
+    components: { display, info },
+    data: () => ({
+        works: []
+    }),
+    methods: {
+        makeArrWithRequiredImages(data) {
+            return data.map(item =>{
+                const requiredPic = require(`../images/content/${item.photo}`);
+                item.photo = requiredPic;
+                return item;
+            })
+        }
+    },
+    created(){
+        const data = require("../data/works.json");
+        this.works = this.makeArrWithRequiredImages(data);
+    }
 })
