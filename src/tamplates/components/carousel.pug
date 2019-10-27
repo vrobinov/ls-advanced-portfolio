@@ -1,0 +1,13 @@
+script(type="text/x-template")#carousel-template
+    carousel.reviews__arrows-block    
+        slide(v-for="review in reviews" :key="review.id").reviews__quote
+            vc-quote(:review="review")
+     
+script(type="text/x-template")#slide-template     
+.quote
+    .text-author {{ review.text }}
+    .img-author-block
+        img(:src="review.photo",alt="review-author" ).author-left
+    h4.author-title {{ review.author }}
+    .author-position {{ review.occ }}
+

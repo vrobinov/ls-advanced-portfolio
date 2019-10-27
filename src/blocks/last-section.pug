@@ -1,25 +1,13 @@
-section(id='#feedback').last-section-bg
+section(id='reviews').last-section-bg
   .container
     .reviews
       h3.reviews__title Что обо мне говорят
       .reviews__arrows-block
         button.reviews__arrow.arrow-prev
         button.reviews__arrow.arrow-next
-      .reviews__quote-left
-        .author-left
-          .text-author Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          .img-author-block
-            +image("content/author01.png", "author-left")
-            h4.author-title Ковальчук Дмитрий
-            .author-position Основатель Loftschool
-      .reviews__quote-right
-        .author-right
-          .text-author Этот код выдержит любые испытания. Только пожалуйста не загружайте сайт на слишком старых браузерах
-          .img-author-block
-            +image("content/author02.png", "author-right")
-            h4.author-title Владимир Сабанцев
-            .author-position Преподователь
-    .form-section
+      #reviews-carousel
+        vc-carousel-wrap
+    .form-section(id='feedback')
       h3.title-form Связаться со мной 
       form.form
         .input-block-name
