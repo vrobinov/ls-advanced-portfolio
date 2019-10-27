@@ -4,10 +4,10 @@ script(type="text/x-template")#carousel-template
             vc-quote(:review="review")
      
 script(type="text/x-template")#slide-template     
-.quote
-    .text-author {{ review.text }}
-    .img-author-block
-        img(:src="review.photo",alt="review-author" ).author-left
-    h4.author-title {{ review.author }}
-    .author-position {{ review.occ }}
+    .quote
+        .text-author {{ review.text }}
+        .img-author-block
+            img(:src="review.photo",alt="review-author" ).author-left
+        h4.author-title {{ review.author }}
+        .author-position {{ review.occ }}
 
