@@ -1,5 +1,5 @@
 script(type="text/x-template")#carousel-template
-    carousel.reviews-carousel 
+    carousel(:paginationEnabled="false" :navigationEnabled="true").reviews-carousel 
         slide(v-for="review in reviews" :key="review.id").reviews__quote
             vc-quote(:review="review")
      

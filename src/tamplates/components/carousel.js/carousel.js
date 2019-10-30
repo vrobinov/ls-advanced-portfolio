@@ -64,7 +64,13 @@ const CarouselWrap = {
 new Vue({
     el:"#reviews-carousel",
     components: {
+        vcQuote: Quote,
         vcCarouselWrap: CarouselWrap
+    },
+    methods: {
+      slide(direction) {
+        EventBus.$emit('slide', direction);
+      }
     }
 
 });

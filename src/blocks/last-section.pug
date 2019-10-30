@@ -1,13 +1,12 @@
-section(id='reviews').last-section-bg
+section(id='reviews-carousel').last-section-bg
   .container
     .reviews
       h3.reviews__title Что обо мне говорят
       .reviews__arrows-block
-        button.reviews__arrow.arrow-prev
-        button.reviews__arrow.arrow-next
+        button(@click="slide('prev')").reviews__arrow.arrow-prev
+        button(@click="slide('next')").reviews__arrow.arrow-next
       .reviews-carousel
-        #reviews-carousel
-          vc-carousel-wrap
+        vc-carousel-wrap
     .form-section(id='feedback')
       h3.title-form Связаться со мной 
       form.form
