@@ -9,7 +9,7 @@ export default {
                 {href:'#about', text: 'Обо мне'},
                 {href:'#skills', text: 'Навыки'},
                 {href:'#works', text: 'Работы'},
-                {href:'#reviews', text: 'Отзывы'},
+                {href:'#reviews-carousel', text: 'Отзывы'},
                 {href:'#feedback', text: 'Связаться'},
             ]
         }
