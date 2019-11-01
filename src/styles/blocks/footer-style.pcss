@@ -41,7 +41,7 @@ margin-left: 63px;
 .footer_block_text-icon{
 width:318px;
 height: 137px;
-margin-left: 525px;
+margin-right: 189px;
 }
 
 .footer__socials__item{
@@ -54,6 +54,12 @@ margin-left: 525px;
   padding: 13px;
   cursor: pointer;
 }
+.footer-wrap-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+  height: 223px;
+  }
 .footer-menu{
 display:flex;
 width: 760px;
@@ -67,12 +73,6 @@ margin-right: 61px;
   color: rgba(255, 255, 255, 0.302);
   line-height: 1.875;
 }
-.footer_block_text-icon {
-width: 326px;
-height: 124px;
-margin-left: 523px;
-transform: translateY(-80px);
-}
 
 
 .footer__socials {
@@ -80,7 +80,6 @@ transform: translateY(-80px);
     display: flex;
     align-items: center;
     margin-top:29px;
-    float: left;
   }
 
   &__item {
@@ -122,8 +121,6 @@ transform: translateY(-80px);
 .footer-quote{
 width: 433px;
 height: 132px;
-margin-left: 183px;
-transform: translateY(-80px);
 }
 
 .guote-text{
@@ -139,4 +136,25 @@ transform: translateY(-80px);
   color: rgb(255, 255, 255);
   font-style: italic;
   line-height: 1.875;
+}
+
+@media screen and (min-width:1200px) and (max-width:1600px){
+.footer-block-my_project{
+display:flex;
+flex-wrap:wrap;
+width: 176px;
+height: 208px;
+margin-right: 85px;
+}
+.footer_block_text-icon{
+width:318px;
+height: 137px;
+margin-right: 80px;
+}
+.vrobinov_block{
+margin-left: 0px;
+}
+.footer-wrap-menu {
+  width: 850px;
+  }
 }

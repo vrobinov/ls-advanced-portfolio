@@ -13,17 +13,18 @@ section(id='home').parallax
     img(src=require("./images/parallax/parallax_items01.png")).parallax__image
   header
     .container
-      .logo
-        a.link-logo(href='') ВР
-      .menu-wrap
-        vc-menu
-      - var socials = ['insta', 'vk', 'github']      
-      .socials
-        ul.socials__list
-          each social in socials
-            li.socials__item
-              a(href='').socials__link
-               +icon(social, `socials__icon socials__icon--${social}`)
+      .wrap-header
+        .logo
+          a.link-logo(href='') ВР
+        .menu-wrap
+          vc-menu
+        - var socials = ['insta', 'vk', 'github']      
+        .socials
+          ul.socials__list
+            each social in socials
+              li.socials__item
+                a(href='').socials__link
+                  +icon(social, `socials__icon socials__icon--${social}`)
     .my-name-block
       .my-name-text Личный сайт веб разработчика 
       h3.my-name-title Вадим 

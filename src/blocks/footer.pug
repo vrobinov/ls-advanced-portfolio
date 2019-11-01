@@ -6,28 +6,29 @@ footer.footer
         .vrobinov_block
           .vrobinov-name Вадим Робинов
           .vrobinov-project Личный сайт веб-разработчика
-      ul.footer-menu
-         li
-           a(href='') Главная
-         li
-           a(href='') Обо мне
-         li
-           a(href='') Навыки
-         li
-           a(href='') Работы
-         li
-           a(href='') Отзывы
-         li
-           a(href='') Связаться
-      .footer_block_text-icon     
-        .footer_social-text Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool   
-         - var socials = ['insta', 'vk', 'github']      
-        .footer-socials
-          ul.footer__socials__list
-            each social in socials
-              li.footer__socials__item
-                a(href='').socials__link
-                  +icon(social, `footer__socials__icon footer__socials__icon--${social}`)
-      .footer-quote
-       .guote-text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
-       .guote-person Martin Golding
+      .footer-wrap-menu    
+        ul.footer-menu
+          li
+            a(href='') Главная
+          li
+            a(href='') Обо мне
+          li
+            a(href='') Навыки
+          li
+            a(href='') Работы
+          li
+            a(href='') Отзывы
+          li
+            a(href='') Связаться
+        .footer_block_text-icon     
+          .footer_social-text Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool   
+          - var socials = ['insta', 'vk', 'github']      
+          .footer-socials
+            ul.footer__socials__list
+              each social in socials
+                li.footer__socials__item
+                  a(href='').socials__link
+                    +icon(social, `footer__socials__icon footer__socials__icon--${social}`)
+        .footer-quote
+          .guote-text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+          .guote-person Martin Golding

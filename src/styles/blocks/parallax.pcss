@@ -73,16 +73,15 @@ a{
 header {
 padding-top:63px;
 }
-
-
+.wrap-header{
+  display:flex;
+}
 .logo {
     font-size: 36px;
     font-family: "Open Sans";
     line-height: 0.833;
-    
     margin-right: 290px;
     font-weight: bolder;
-    float: left;
 }
 .link-logo{
         color: rgb(255, 255, 255);
@@ -91,11 +90,10 @@ padding-top:63px;
 .header-menu {
     width: 698px;
     margin-right: 263px;
-    float: left;
 }
 
 .header-menu li {
-    float: left;
+    display:inline-block;
     list-style: none;
     font-size: 16px;
     font-family: "Open Sans";
@@ -118,8 +116,6 @@ padding-top:63px;
    &__list {
     display: flex;
     align-items: center;
-    
-    float: left;
   }
 
   &__item {
@@ -164,8 +160,6 @@ padding-top:63px;
     height: 127px;
     margin-top: 413px;
     margin-left: 31.4375rem;
-    margin-bottom: 324px;
-    float: left;
     display: flex;
 }
 .my-name-text{
@@ -174,7 +168,7 @@ padding-top:63px;
   color: rgba(255, 255, 255, 0.4);
   line-height: 1.667;
   text-align: right;
-    margin-right: 61px;
+  margin-right: 61px;
 }
 .my-name-title{
   font-size: 72px;
@@ -190,12 +184,13 @@ padding-top:63px;
 .scroll-block{
     width: 120px;
     height: 43px;
-  font-size: 18px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  line-height: 1.667;
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
     margin: auto;
     display: flex;
+    margin-top:327px;
 }
 .img-scroll-block{
     margin-left: 15px;
