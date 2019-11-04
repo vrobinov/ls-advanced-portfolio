@@ -1,4 +1,4 @@
 script(type="text/x-template")#menu-template
- ul.header-menu
+ ul.header-menu.burger-menu-nav
     li(v-for="item in menu" :key="item.text").menu-item
         a(:href="item.href",class="menu-link", v-scroll-to="item.href") {{item.text}}
